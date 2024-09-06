@@ -51,6 +51,19 @@ Options:
   -h, --help                                display help for command
 ```
 
+### Glue Testnet Deployment Command
+
+```
+npx @uniswap/deploy-v3 -pk <DEPLOYER_PRIVATE_KEY> -j <TESTNET_RPC> -w9 <WRAPPED_GLUE_ADDRESS> -ncl GLUE -o <ELECTED_OWNER_ADDRESS> -s ./TESTNET_UNISWAP_DEPLOYMENTS.json
+```
+
+### Glue Mainnet Deployment Command
+
+```
+npx @uniswap/deploy-v3 -pk <DEPLOYER_PRIVATE_KEY> -j <MAINNET_RPC> -w9 <WRAPPED_GLUE_ADDRESS> -ncl GLUE -o <ELECTED_OWNER_ADDRESS> -s ./MAINNET_UNISWAP_DEPLOYMENTS.json
+```
+
+
 The script runs a set of migrations, each migration deploying a contract or executing a transaction. Migration state is
 saved in a JSON file at the supplied path (by default `./state.json`).
 
